@@ -12,7 +12,11 @@ namespace VypocetMatic
         {
             Matica Matica1 = new Matica(3,2,true);
             Console.WriteLine("Matica1");
+
             Matica1.VypisHodnoty();
+            Console.WriteLine("Matica1[0,0] = {0}",Matica1[0, 0]);
+            Matica1[0, 0] = 9;
+            Console.WriteLine("Matica1[0,0] = {0}", Matica1[0, 0]);
 
             Matica Matica2 = new Matica(2,2,true);
             Console.WriteLine("Matica2");
@@ -35,6 +39,7 @@ namespace VypocetMatic
             Matica6.VypisHodnoty();
 
             Console.ReadLine();
+
         }
     }
 }

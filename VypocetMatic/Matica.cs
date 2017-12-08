@@ -179,5 +179,18 @@ namespace VypocetMatic
         {
             return m;
         }
+
+        public int this[int x, int y]
+        {
+            get
+            {
+                return hodnotyMatice[x, y];
+            }
+
+            set
+            {
+                hodnotyMatice[x, y] = value;
+            }
+        }
     }
 }
